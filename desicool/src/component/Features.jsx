@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import feature from "../component/images/features.jpg";
-const Features = () => {
+const Features = (props) => {
+  const [para, setPara] = useState(
+    `Lorem ipsum dolor sit amet consectetur adipisicing elit. `
+  );
   return (
     <>
       <Navbar />
       <section id="feature">
         <div className="title-text">
-          <p>FEATURES</p>
-          <h1>Why Choose Us</h1>
+          <p>{props.para}</p>
+          <h1>{props.heading}</h1>
         </div>
         <div className="feature-box">
           <div className="features">
@@ -18,7 +21,7 @@ const Features = () => {
                 <i className="fa fa-shield"></i>
               </div>
               <div className="feature-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>{para}</p>
               </div>
             </div>
 
@@ -28,7 +31,7 @@ const Features = () => {
                 <i className="fa fa-solid fa-square-check"></i>
               </div>
               <div className="feature-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>{para} </p>
               </div>
             </div>
 
@@ -38,7 +41,7 @@ const Features = () => {
                 <i className="fa fa-inr"></i>
               </div>
               <div className="feature-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>{para} </p>
               </div>
             </div>
           </div>

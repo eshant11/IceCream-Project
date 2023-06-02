@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./component/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./component/Home";
 import Contact from "./Contact";
@@ -9,14 +8,32 @@ import Features from "./component/Features";
 function App() {
   return (
     <>
-      {/* <Navbar />
-      <br /> */}
-
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Product />} />
+        <Route
+          path="/"
+          element={<Home heading={"Desi Cool"} para={"Taste your life"} />}
+        />
+        <Route
+          path="/features"
+          element={<Features para={"FEATURES"} heading={"Why Choose Us"} />}
+        />
+        <Route
+          path="/contact"
+          element={<Contact para={"CONTACTS"} heading={"Visit Shop Today"} />}
+        />
+        <Route
+          path="/services"
+          element={
+            <Product
+              para={"OUR PRODUCTS"}
+              heading={"We Provide Better"}
+              product1Name={"Butter Gelato"}
+              product2Name={"Ferrero Rocher"}
+              product3Name={"Chocolate Gelato"}
+              product4Name={"Coffee Hazelnut"}
+            />
+          }
+        />
       </Routes>
     </>
   );

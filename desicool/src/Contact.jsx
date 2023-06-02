@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./component/Navbar";
+import { NavLink } from "react-router-dom";
+const Contact = (props) => {
+  const [contactObj, setContactObj] = useState({
+    address: `Basra Coldrinks, Bomay Bazar, in front of old kewalram petrol
+              pump, (Madhya Pradesh) 450001`,
+    phone: +91123456890,
+    mail: `example@website.com`,
+  });
 
-const Contact = () => {
   return (
     <>
       <Navbar />
       <section id="footer">
         <img src="image/footer.jpg" className="footer-img" />
         <div className="title-text">
-          <p>CONTACTS</p>
-          <h1>Visit Shop Today</h1>
+          <p>{props.para}</p>
+          <h1>{props.heading}</h1>
         </div>
         <div className="footer-row">
           <div className="footer-left">
@@ -27,29 +34,28 @@ const Contact = () => {
           <div className="footer-right">
             <h1>Get In Touch</h1>
             <p>
-              Basra Coldrinks, Bomay Bazar, in front of old kewalram petrol
-              pump, (Madhya Pradesh) 450001
+              {contactObj.address}
               <i className="fa fa-solid fa-location-dot"></i>
             </p>
             <p>
-              example@website.com<i className="fa fa-paper-plane"></i>
+              {contactObj.mail}
+              <i className="fa fa-paper-plane"></i>
             </p>
             <p>
-              +91 1234567890<i className="fa fa-solid fa-phone"></i>
+              {contactObj.phone}
+              <i className="fa fa-solid fa-phone"></i>
             </p>
           </div>
         </div>
 
         <div className="social-link">
           <i className="fa fa-footer fa-solid fa-facebook"></i>
-          <a href="https://www.instagram.com/desicool_icecreams/">
-            {" "}
+          <NavLink to="https://www.instagram.com/desicool_icecreams/">
             <i className="fa fa-footer fa-solid fa-instagram"></i>
-          </a>
+          </NavLink>
           <i className="fa fa-footer fa-solid fa-twitter"></i>
           <i className="fa fa-footer fa-solid fa-youtube"></i>
           <p>
-            {" "}
             <small className="CopyRight">©</small> Copyright DesiCool IceCream
             Parlour
           </p>

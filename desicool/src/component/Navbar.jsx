@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import download from "../component/images/download.png";
-import close from "../component/images/close-window.png";
 
 const Navbar = () => {
   const [navbarVisible, setNavbarVisible] = useState(true);
@@ -44,7 +42,6 @@ const Navbar = () => {
         </div>
       )}
       <div id="menuBtn" onClick={menuControl}>
-        {/* <img src={navbarVisible ? close : download} alt="menuBtn" id="menu" /> */}
         {navbarVisible ? (
           <i class="fa-regular fa fa-rectangle-xmark fa-beat"></i>
         ) : (

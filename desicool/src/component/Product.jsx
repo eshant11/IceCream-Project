@@ -1,30 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import butter from "../component/images/vutter gelato.jpg";
 import ferrero from "../component/images/Ferrero Rocher.jpg";
 import chocolate from "../component/images/chocolate gelato.jpg";
 import coffee from "../component/images/coffee hazelnut.jpg";
-const Product = () => {
+const Product = (props) => {
+  const [para, setPara] =
+    useState(`Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Repellendus, at consequatur. Explicabo minima itaque facere`);
+
   return (
     <>
       <Navbar />
 
       <section id="service">
         <div className="title-text">
-          <p>OUR PRODUCTS</p>
-          <h1>We Provide Better</h1>
+          <p>{props.para}</p>
+          <h1>{props.heading}</h1>
         </div>
         <div className="service-box">
           <div className="single-service">
             <img src={butter} alt="butter" />
             <div className="overlay"></div>
             <div className="service-desc">
-              <h3>Butter Gelato</h3>
+              <h3>{props.product1Name}</h3>
               <hr />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellendus, at consequatur. Explicabo minima itaque facere{" "}
-              </p>
+              <p>{para}</p>
             </div>
           </div>
 
@@ -32,12 +33,9 @@ const Product = () => {
             <img src={ferrero} alt="ferrero" />
             <div className="overlay"></div>
             <div className="service-desc">
-              <h3>Ferrero Rocher</h3>
+              <h3>{props.product2Name}</h3>
               <hr />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellendus, at consequatur. Explicabo minima itaque facere{" "}
-              </p>
+              <p>{para}</p>
             </div>
           </div>
 
@@ -45,12 +43,9 @@ const Product = () => {
             <img src={chocolate} alt="chocolate" />
             <div className="overlay"></div>
             <div className="service-desc">
-              <h3>Chocolate Gelato</h3>
+              <h3>{props.product3Name}</h3>
               <hr />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellendus, at consequatur. Explicabo minima itaque facere{" "}
-              </p>
+              <p>{para}</p>
             </div>
           </div>
 
@@ -58,12 +53,9 @@ const Product = () => {
             <img src={coffee} alt="coffee" />
             <div className="overlay"></div>
             <div className="service-desc">
-              <h3>Coffee Hazelnut</h3>
+              <h3>{props.product4Name}</h3>
               <hr />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellendus, at consequatur. Explicabo minima itaque facere{" "}
-              </p>
+              <p>{para}</p>
             </div>
           </div>
         </div>
