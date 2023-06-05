@@ -18,22 +18,46 @@ const Navbar = (props) => {
           <nav>
             <ul>
               <li>
-                <NavLink id="li" to="/">
+                <NavLink
+                  id="li"
+                  to="/"
+                  onClick={() => {
+                    setNavbarVisible(false);
+                  }}
+                >
                   HOME
                 </NavLink>
               </li>
               <li id="li">
-                <NavLink id="li" to="/features">
+                <NavLink
+                  id="li"
+                  to="/features"
+                  onClick={() => {
+                    setNavbarVisible(false);
+                  }}
+                >
                   FEATURES
                 </NavLink>
               </li>
               <li>
-                <NavLink id="li" to="/services">
+                <NavLink
+                  id="li"
+                  to="/services"
+                  onClick={() => {
+                    setNavbarVisible(false);
+                  }}
+                >
                   OUR PRODUCTS
                 </NavLink>
               </li>
               <li>
-                <NavLink id="li" to="/contact">
+                <NavLink
+                  id="li"
+                  to="/contact"
+                  onClick={() => {
+                    setNavbarVisible(false);
+                  }}
+                >
                   CONTACT US
                 </NavLink>
               </li>
