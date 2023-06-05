@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import butter from "../component/images/vutter gelato.jpg";
 import ferrero from "../component/images/Ferrero Rocher.jpg";
 import chocolate from "../component/images/chocolate gelato.jpg";
@@ -11,8 +10,6 @@ const Product = (props) => {
 
   return (
     <>
-      <Navbar />
-
       <section id="service">
         <div className="title-text">
           <p>{props.para}</p>

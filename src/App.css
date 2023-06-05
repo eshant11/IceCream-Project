@@ -165,7 +165,19 @@ nav ul li #li {
     border: 1px solid #dd7022;
     border-radius: 3px;
   }
-
+  #sideNav {
+    height: fit-content;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 10%;
+  }
+  nav ul li {
+    margin: 5px 20px;
+  }
   .logo {
     width: 100px;
     height: 100px;

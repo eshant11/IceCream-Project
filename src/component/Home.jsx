@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "./Navbar";
 import logo from "../component/images/logo.jpg";
+import { useState } from "react";
 
 const Home = (props) => {
+  const [navbarVisible, setNavbarVisible] = useState(props.navbarVisible);
   return (
     <>
-      <Navbar />
       <section id="banner">
         <img src={logo} alt="banner" className="logo" />
         <div className="banner-text">

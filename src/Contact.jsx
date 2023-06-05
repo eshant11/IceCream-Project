@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./component/Navbar";
 import { NavLink } from "react-router-dom";
 const Contact = (props) => {
   const [contactObj, setContactObj] = useState({
@@ -11,7 +10,6 @@ const Contact = (props) => {
 
   return (
     <>
-      <Navbar />
       <section id="footer">
         <img src="image/footer.jpg" className="footer-img" />
         <div className="title-text">

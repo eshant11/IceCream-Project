@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
-  const [navbarVisible, setNavbarVisible] = useState(true);
+const Navbar = (props) => {
+  const [navbarVisible, setNavbarVisible] = useState(props.navbarVisible);
 
   const menuControl = () => {
     setNavbarVisible(!navbarVisible);
@@ -43,9 +43,9 @@ const Navbar = () => {
       )}
       <div id="menuBtn" onClick={menuControl}>
         {navbarVisible ? (
-          <i class="fa-regular fa fa-rectangle-xmark fa-beat"></i>
+          <i className="fa-regular fa fa-rectangle-xmark fa-beat"></i>
         ) : (
-          <i class="fa-solid fa fa-bars fa-flip"></i>
+          <i className="fa-solid fa fa-bars fa-flip"></i>
         )}
       </div>
     </>

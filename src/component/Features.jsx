@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import feature from "../component/images/features.jpg";
 const Features = (props) => {
   const [para, setPara] = useState(
@@ -7,7 +6,6 @@ const Features = (props) => {
   );
   return (
     <>
-      <Navbar />
       <section id="feature">
         <div className="title-text">
           <p>{props.para}</p>

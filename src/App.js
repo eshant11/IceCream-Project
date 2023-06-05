@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./component/Home";
 import Contact from "./Contact";
 import Product from "./component/Product";
 import Features from "./component/Features";
+import Navbar from "./component/Navbar";
+
 function App() {
+  const [navbarVisible, setNavbarVisible] = useState(true);
   return (
     <>
+      <Navbar navbarVisible={navbarVisible} />
       <Routes>
         <Route
           path="/"
