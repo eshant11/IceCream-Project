@@ -3,6 +3,7 @@ import butter from "../component/images/vutter gelato.jpg";
 import ferrero from "../component/images/Ferrero Rocher.jpg";
 import chocolate from "../component/images/chocolate gelato.jpg";
 import coffee from "../component/images/coffee hazelnut.jpg";
+
 const Product = (props) => {
   const [para, setPara] =
     useState(`Lorem ipsum dolor sit, amet consectetur adipisicing elit.
