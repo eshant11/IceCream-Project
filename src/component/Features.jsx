@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import feature from "../component/images/features.jpg";
+import Theme from "./Theme";
 const Features = (props) => {
   const [para, setPara] = useState(
     `Lorem ipsum dolor sit amet consectetur adipisicing elit. `
@@ -7,6 +8,8 @@ const Features = (props) => {
   return (
     <>
       <section id="feature">
+        <Theme />
+
         <div className="title-text">
           <p>{props.para}</p>
           <h1>{props.heading}</h1>

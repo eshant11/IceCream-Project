@@ -3,6 +3,7 @@ import butter from "../component/images/vutter gelato.jpg";
 import ferrero from "../component/images/Ferrero Rocher.jpg";
 import chocolate from "../component/images/chocolate gelato.jpg";
 import coffee from "../component/images/coffee hazelnut.jpg";
+import Theme from "./Theme";
 
 const Product = (props) => {
   const [para, setPara] =
@@ -12,6 +13,8 @@ const Product = (props) => {
   return (
     <>
       <section id="service">
+        <Theme />
+
         <div className="title-text">
           <p>{props.para}</p>
           <h1>{props.heading}</h1>

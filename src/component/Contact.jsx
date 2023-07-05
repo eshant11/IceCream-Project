@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Theme from "./Theme";
+
 const Contact = (props) => {
   const [contactObj, setContactObj] = useState({
     address: `Basra Coldrinks, Bomay Bazar, in front of old kewalram petrol
@@ -11,6 +13,8 @@ const Contact = (props) => {
   return (
     <>
       <section id="footer">
+        <Theme />
+
         <img src="image/footer.jpg" className="footer-img" />
         <div className="title-text">
           <p>{props.para}</p>
@@ -20,7 +24,6 @@ const Contact = (props) => {
           <div className="footer-left">
             <h1>Opening Hours</h1>
             <p>
-              {" "}
               <i className="fa fa-solid fa-clock"></i>Monday to Friday - 10am to
               9pm
             </p>
