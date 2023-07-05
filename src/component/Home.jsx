@@ -8,7 +8,10 @@ const Home = (props) => {
     <>
       <section id="banner">
         <Theme />
-        <img src={logo} alt="banner" className="logo" />
+        <div className="logo-container">
+          <img src={logo} alt="banner" className="logo" />
+          <div className="blur"></div>
+        </div>
         <div className="banner-text">
           <h1>{props.heading}</h1>
           <p>{props.para}</p>
