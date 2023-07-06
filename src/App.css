@@ -78,7 +78,24 @@
   /* opacity: 0.9; */
   color: var(--chocolate);
   border: 1px solid #f7c6a4;
-  border-radius: 60px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 49%;
+}
+.logo_overlay {
+  width: 140px;
+  height: 120px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  opacity: 0.6;
+  background-color: var(--chocolate);
+
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 49%;
 }
 
 .banner-text {
@@ -177,7 +194,7 @@ nav ul li #li {
 }
 #menuBtn {
   width: 50px;
-  height: 48px;
+  height: 46px;
   background: var(--chocolate);
   text-align: center;
   position: fixed;
@@ -190,10 +207,9 @@ nav ul li #li {
 }
 
 #menuBtn .fa {
-  margin: 10px;
   border: 1px solid var(--chocolate);
   border-radius: 3px;
-  margin: 10px 12px;
+  margin: 8px 12px;
   font-size: 28px;
 }
 
@@ -215,10 +231,10 @@ nav ul li #li {
     top: -7px;
   }
 
-  #menuBtn img {
+  #menuBtn i {
     width: 20px;
     height: 24px;
-    margin: 5px;
+    margin-top: 6px;
     border: 1px solid var(--chocolate);
     border-radius: 3px;
   }
@@ -243,8 +259,16 @@ nav ul li #li {
     left: 30%;
     /* opacity: 0.9; */
     color: var(--chocolate);
+  }
+  .logo_overlay {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    opacity: 0.6;
+    background-color: var(--chocolate);
     border: 1px solid #f7c6a4;
-    border-radius: 60px;
   }
 }
 
