@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/IceCream-Project/static/css/main.92146eee.css",
+    "main.js": "/IceCream-Project/static/js/main.88a1d59a.js",
+    "static/media/features.jpg": "/IceCream-Project/static/media/features.1620a17bc38379725bf4.jpg",
+    "static/media/background.jpg": "/IceCream-Project/static/media/background.0751b2c81ef9f5a028c4.jpg",
+    "static/media/logo.jpg": "/IceCream-Project/static/media/logo.2245e088fc5b26234627.jpg",
+    "static/media/Ferrero Rocher.jpg": "/IceCream-Project/static/media/Ferrero Rocher.50a0aee5772395155a19.jpg",
+    "static/media/vutter gelato.jpg": "/IceCream-Project/static/media/vutter gelato.2823d7faf53e27f7c560.jpg",
+    "index.html": "/IceCream-Project/index.html",
+    "main.92146eee.css.map": "/IceCream-Project/static/css/main.92146eee.css.map",
+    "main.88a1d59a.js.map": "/IceCream-Project/static/js/main.88a1d59a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92146eee.css",
+    "static/js/main.88a1d59a.js"
+  ]
+}
